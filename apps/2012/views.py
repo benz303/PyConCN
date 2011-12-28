@@ -31,3 +31,5 @@ class siteView(object):
 
     def volunteer(self):
         return dict(page=dict(pagename='volunteer',cndata=''))
+    def venue(self):
+        return dict(page=dict(pagename='venue',cndata=''))    
