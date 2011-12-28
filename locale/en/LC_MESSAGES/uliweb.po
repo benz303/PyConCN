@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Pycon China 2011\n"
+"Project-Id-Version: COSUG 2011\n"
 "POT-Creation-Date: 2011-11-16 10:54\n"
 "PO-Revision-Date: 2011-12-14 16:07+0800\n"
 "Last-Translator: dndx <dndx@idndx.com>\n"

@@ -1,0 +1,88 @@
+{{extend "bootstrap_layout.html"}}
+
+{{block meta}}
+<link rel="stylesheet" type="text/css" href="{{=url_for_static('css/index.css')}}" />
+<script type="text/javascript" src="{{=url_for_static('js/QTransform.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/bootstrap-twipsy.js')}}"></script>
+<script type="text/javascript" src="{{=url_for_static('js/bootstrap-popover.js')}}"></script>
+<script type="text/javascript">
+    LANG = "{{=_('cn')}}"
+</script>
+<script type="text/javascript" src="{{=url_for_static('js/index.js')}}"></script>
+{{end}}
+
+{{block content}}
+    <div class="hero-unit">
+        <div id="content">
+            <div class="hero-content" id="first-hero">
+                <div class="row show-grid">
+                    <div class="span-one-third" style="width:200px;">
+                        <img src="{{=url_for_static('images/logo.png')}}" alt="COSUG 2012 Logo" />
+                    </div>
+                    <div class="span-two-thirds" style="width:600px; text-align:right;">
+                        <h1 style="border:none; padding-bottom:0;">COSUG 2012</h1><h1 style="border:none;">Is Here!</h1>
+                        <p>Jan 8, 2012 9:30 AM - 6:00 PM</p>
+                        <p>Shanghai, China</p>
+                    </div>
+                    <br />
+                    <p style="text-align:right;"><a class="btn primary large" href="/2012/registration ">{{=_('立即报名！')}} &raquo;</a></p>
+                </div><!--END grid-->
+            </div><!--END hero-content-->
+            
+            <div class="hero-content" id="forth-hero">
+                <div class="row show-grid">
+                    <div class="span-one-third" style="text-align:center;">
+                        <h1 style="border:none; margin-left:10px;">Follow US on</h1>
+                        <img style="margin-top:50px;" src="http://img.t.sinajs.cn/t4/style/images/staticlogo/download/Brand_Group/PNG/Cn_En_Group/Sina_Weibo_Logo_RGB_C_E.png" width="250" alt="Sina Weibo Logo" />
+                    </div>
+                    <div class="span8" style="text-align:right;">
+                        <iframe width="350" height="310" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=350&amp;height=310&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=1&amp;noborder=1&amp;isWeibo=1&amp;isFans=0&amp;uid=2556877320&amp;verifier=828591d4"></iframe>
+                    </div>
+                </div><!--END grid-->
+            </div><!--END hero-content-->
+            
+            <!--NEW hero insert here-->
+        </div><!--END content-->
+        <div class="row show-grid" id="hero-selector">
+            <div class="span1" id="first">1</div>
+            <div class="span1" id="second">2</div>
+        </div><!-- END row-->
+    </div><!-- END hero-unit-->
+    
+    <div class="row">
+        <div class="span6">
+          <h2>{{=_('演讲日程')}}</h2>
+          <ol>
+              <li>{{=_('会议开场 & 欢迎来宾')}}</li>
+              <li class="has_sub_schedule">{{=_('精彩主题演讲')}}&darr;
+                <ul class="sub_schedule">
+                  <li>{{=_('国内首个公有云计算平台核心团队经验分享')}}</li>
+                  <li>{{=_('Deploy Openstack with Juju')}}</li>
+                  <li>{{=_('用Haproxy+OpenStack实现web application auto scaling')}}</li>
+                  <li>{{=_('OpenStack部署实践')}}</li>
+                </ul>
+              </li>
+              <li>{{=_('闪电演讲')}}</li>
+              <li>{{=_('分组讨论和实战演练')}}</li>
+          </ol>
+          <p><a class="btn" href="/2012/schedule">{{=_('详细日程')}} &raquo;</a></p>
+
+        </div>
+        <div class="span5">
+          <h2>{{=_('关于')}} COSUG</h2>
+           <p>{{=_('Users and developers of the open source cloud, OpenStack.org. The group objective is to create a community for collaboration in China.')}}</p>
+           <p>{{=_('Google Groups')}}: <a href="http://groups.google.com/group/china-openstack-user-group">http://groups.google.com/group/china-openstack-user-group</a></p>
+           <p>Welcome to the Community <a href="http://www.openstack.org/community/">http://www.openstack.org/community/</a></p>
+          <p><a class="btn" href="/2012/about">{{=_('更多细节')}} &raquo;</a></p>
+       </div>
+        <div class="span5">
+
+          <h2>{{=_('近期新闻')}}</h2>
+          <ol>
+              <li>PyCon China 2012 {{=_('大会网络直播地址：')}}<a href="http://live.topgeek.org" target="_blank">http://live.topgeek.org</a></li>
+              <li>PyCon China 2012 {{=_('官方网站上线')}}</li>
+              <li>PyCon China {{=_('官方微博')}} <a href="http://weibo.com/pyconcn" target="_blank">@PyConCN</a> {{=_('上线')}}</li>
+          </ol>
+        </div>
+      </div>
+{{end}}
