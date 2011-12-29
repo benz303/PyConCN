@@ -2,8 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Dndx (Datong Sun)" />
-<title>{{=settings.LAYOUT.TITLE}}</title>
+<title>{{=settings.LAYOUT.SUBTITLE}} - {{=settings.LAYOUT.TITLE}}</title>
 <link rel="stylesheet" type="text/css" href="{{=url_for_static('css/bootstrap.min.css', ver='1.3.0')}}" />
 <link rel="stylesheet" type="text/css" href="{{=url_for_static('css/layout.css')}}" />
 <!--[if lt IE 9]>
@@ -32,16 +31,6 @@
             {{end}}            
           </ul>
           {{end}}
-          <ul class="nav secondary-nav">
-              <li class="dropdown">
-                  <a class="dropdown-toggle">Site Language</a>
-                  <ul class="dropdown-menu">
-                      <li><a class="cn">简体中文</a></li>
-                      <li class="divider"></li>
-                      <li><a class="en">English</a></li>
-                  </ul>
-              </li>
-          </ul>
         </div><!--END container-->
       </div><!--END fill-->
     </div><!--END topbar-->

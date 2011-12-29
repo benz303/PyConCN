@@ -1,69 +1,65 @@
 {{extend "bootstrap_layout.html"}}
 {{block content}}
-<h1>{{=_('关于大会')}}</h1>
+<h1>关于大会</h1>
 
 <div class="row show-grid">
-    <div class="span5">
-        <img style="width: 300px" src="{{=url_for_static('images/logo.png')}}" alt="PyCon China 2011 Logo" /></div><!--END span-->
+    <div class="span4">
+        <img style="width: 200px" src="{{=url_for_static('images/logo.png')}}" alt="COSUG 2012 Logo" /></div><!--END span-->
     <div class="span11">
-        <p>{{=_('OpenStack开发者大会，由中国OpenStack用户组（China OpenStack User Groups, COSUG)和TopGeek联合举办。')}}</p>
-        <p>OpenStack is a global collaboration of developers and cloud computing technologists producing the open standard cloud computing platform for both public and private clouds. The project aims to deliver solutions for all types of clouds by being simple to implement, massively scalable, and feature rich. The technology consists of a series of interrelated projects delivering various components for a cloud infrastructure solution.</p>
-        <p>本次大会是第一次中国的OpenStack开发者大会，也是COSUG第一次季度线下技术交流活动。</p>
+        <p>本次OpenStack开发者大会是第一次国内的OpenStack开发者大会，也是COSUG第一次季度线下技术交流活动，是由中国 OpenStack用户组（China OpenStack User Groups，COSUG)和TopGeek联合举办。</p>
+        <p>OpenStack是一个构建公有云及私有云的开源项目，该项目的首要任务是简化云的部署过程并为其带来良好的可扩展性，它的社区在全球拥有超过140家企业及2173位开发者的支持。</p>
+        <p>中国OpenStack用户组（COSUG）社区是由国内的OpenStack用户和开发者组成的开放社区，以推动中国OpenStack技 术交流与合作为主要目的。</p>
     </div><!--END span-->
 </div><!--END row-->
 
-<h2>{{=_('关于主办方')}}</h2>
+<h2>关于主办方</h2>
     <h4>COSUG</h4>
-    <p>{{=_('Users and developers of the open source cloud, OpenStack.org. The group objective is to create a community for collaboration in China.')}}</p>
-    <h4>COSUG的目标和任务</h4>
-    <p>Goal:</p>
-    <p>– Promoting OpenStack to bring open and standardization in Cloud methodology and strategy.</p>
-    <p>Mission:</p>
-    <p>– Promote OpenStack’s BEST to China Industry</p>
-    <ul>
-      <li>B – Business opportunity</li>
-      <li>E – Experience sharing</li>
-      <li>S – Social network</li>
-      <li>T – Technical communication</li>
-    </ul>
-    <h4>相关信息</h4>
-    <p>{{=_('官方微博')}} <a href="http://weibo.com/cosug" target="_blank">@COSUG</a></p>
-    <p>{{=_('Google Groups')}}: <a href="http://groups.google.com/group/china-openstack-user-group" target="_blank">http://groups.google.com/group/china-openstack-user-group</a></p>
-    <p>Welcome to the Community <a href="http://www.openstack.org/community/" target="_blank">http://www.openstack.org/community/</a></p>
+    <p>中国OpenStack用户组（COSUG）社区是由国内的OpenStack用户和开发者组成的开放社区，以推动中国OpenStack技 术交流与合作为主要目的。致力于推动国内基于OpenStack技术的开源云计算发展，为国内云计算兴趣爱好者、开发者以及对云计算有需求的 公司提供了一个技术共享平台，围绕OpenStack而聚集在一起，共同研究、相互讨论、互相学习。</p>
     <hr />
-
+    <h4>关于OpenStack</h4>
+    <p>OpenStack是一个构建公有云及私有云的开源项目，该项目的首要任务是简化云的部署过程并为其带来良好的可扩展性，它的社区在全球拥有 超过140家企业及2173位开发者的支持。</p>
+    <p>目前该项目主要有五个组件：Compute、Object Storage、Image Service、Dashboard和Identity。</p>
+    <hr />
+    <h4>关于COSUG</h4>
+    <p>中国OpenStack用户组（COSUG）社区是由国内的OpenStack用户和开发者组成的开放社区，以推动中国OpenStack技 术交流与合作为主要目的。致力于推动国内基于OpenStack技术的开源云计算发展，为国内云计算兴趣爱好者、开发者以及对云计算有需求的 公司提供了一个技术共享平台，围绕OpenStack而聚集在一起，共同研究、相互讨论、互相学习。</p>
+    <hr />
+    <h4>相关信息</h4>
+    <p>官方微博 <a href="http://weibo.com/cosug" target="_blank">@COSUG</a></p>
+    <p>Google Groups: <a href="http://groups.google.com/group/china-openstack-user-group" target="_blank">http://groups.google.com/group/china-openstack-user-group</a></p>
+    <p>OpenStack社区 <a href="http://www.openstack.org/community/" target="_blank">http://www.openstack.org/community/</a></p>
+    <hr />
 <div class="row show-grid">
         <div class="span8">
-        <h4>{{=_('顶尖极客沙龙(TopGeek)')}}</h4>
-        <p>{{=_('是面向技术极客的组织，定期举办线下活动，讨论软件和互联网的一些新的技术潮流，开发理念和经验。')}}
-{{=_('这个组织不以语言或行业划分圈子，打破技术分割，开拓大家思路，促进互相学习，实现资源共享。解决一些成熟技术人员进一步发展的共同问题，促进交流和发展。口号："一日为极客，终身为极客！"')}}</p>
+        <h4>顶尖极客沙龙(TopGeek)</h4>
+        <p>是面向技术极客的组织，定期举办线下活动，讨论软件和互联网的一些新的技术潮流，开发理念和经验。
+这个组织不以语言或行业划分圈子，打破技术分割，开拓大家思路，促进互相学习，实现资源共享。解决一些成熟技术人员进一步发展的共同问题，促进交流和发展。口号："一日为极客，终身为极客！"</p>
     </div><!--END span8-->
     <div class="span8">
-        <h4>{{=_('TopGeek组织的特点')}}</h4>
+        <h4>TopGeek组织的特点</h4>
         <ol>
-            <li>{{=_('线下活动为主，与会人员和主题不分程序开发语言、不分开源还是商业软件，不分终端是PC还是手机。提倡跨界交流。')}}</li>
-            <li>{{=_('以高级技术人员为主，活动中鼓励频繁沟通，对问题的深入探究。')}}</li>
-            <li>{{=_('在研究主流技术趋势、新机会的同时，也给予小众的技术流派足够关注。')}}</li>
+            <li>线下活动为主，与会人员和主题不分程序开发语言、不分开源还是商业软件，不分终端是PC还是手机。提倡跨界交流。</li>
+            <li>以高级技术人员为主，活动中鼓励频繁沟通，对问题的深入探究。</li>
+            <li>在研究主流技术趋势、新机会的同时，也给予小众的技术流派足够关注。</li>
         </ol>
     </div><!--END span8-->
 </div><!--END row-->
 <div class="row show-grid">
     <div class="span8">
-        <h4>{{=_('关于TopGeek')}}</h4>
-        <p><strong>{{=_('组织博客')}}：</strong><a target="_blank" href="http://topgeek.org">http://topgeek.org/</a></p>
-        <p><strong>{{=_('新浪微博')}}：</strong><a target="_blank" href="http://weibo/topgeek">http://weibo/topgeek</a></p>
-        <p><strong>{{=_('组织者')}}：</strong>{{=_('陈世欣（2Style4You CTO），王宏（微软中国高级经理），李锟（上海鹏图信息技术有限公司CTO），吕国宁（Intridea资深工程师），罗小能（2Style4You工程师），支晓勇（91Office技术总监）')}}</p>
+        <h4>关于TopGeek</h4>
+        <p><strong>组织博客：</strong><a target="_blank" href="http://topgeek.org">http://topgeek.org/</a></p>
+        <p><strong>新浪微博：</strong><a target="_blank" href="http://weibo/topgeek">http://weibo/topgeek</a></p>
+        <p><strong>组织者：</strong>陈世欣（2Style4You CTO），王宏（微软中国高级经理），李锟（上海鹏图信息技术有限公司CTO），吕国宁（Intridea资深工程师），罗小能（2Style4You工程师），支晓勇（91Office技术总监）</p>
     </div><!--END span8-->
     <div class="span8">
-        <h4>{{=_('TopGeek社区组织的历次活动')}}</h4>
+        <h4>TopGeek社区组织的历次活动</h4>
         <ul>
-            <li>TopGeek1，{{=_('报道请看')}}<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=129</a></li>
-            <li>TopGeek2，{{=_('报道请看')}}<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=167</a></li>
-            <li>TopGeek3，{{=_('报道请看')}}<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=209</a></li>
-            <li>TopGeek4，{{=_('报道请看')}}<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=243</a></li>
-            <li>TopGeek5，{{=_('报道请看')}}<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=264</a></li>
+            <li>TopGeek1，报道请看<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=129</a></li>
+            <li>TopGeek2，报道请看<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=167</a></li>
+            <li>TopGeek3，报道请看<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=209</a></li>
+            <li>TopGeek4，报道请看<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=243</a></li>
+            <li>TopGeek5，报道请看<a target="_blank" href="http://topgeek.org/?p=129">http://topgeek.org/?p=264</a></li>
         </ul>
-        <p><a target="_blank" href="http://www.51qiangzuo.com/host/1105">{{=_('查看此主办方其它活动')}}</a></p>
+        <p><a target="_blank" href="http://www.51qiangzuo.com/host/1105">查看此主办方其它活动</a></p>
     </div><!--END span8-->
 </div><!--END row-->
 {{end}}

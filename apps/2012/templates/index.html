@@ -7,7 +7,7 @@
 <script type="text/javascript" src="{{=url_for_static('js/bootstrap-twipsy.js')}}"></script>
 <script type="text/javascript" src="{{=url_for_static('js/bootstrap-popover.js')}}"></script>
 <script type="text/javascript">
-    LANG = "{{=_('cn')}}"
+    LANG = 'cn'
 </script>
 <script type="text/javascript" src="{{=url_for_static('js/index.js')}}"></script>
 {{end}}
@@ -22,11 +22,11 @@
                     </div>
                     <div class="span-two-thirds" style="width:600px; text-align:right;">
                         <h1 style="border:none; padding-bottom:0;">COSUG 2012</h1><h1 style="border:none;">Is Here!</h1>
-                        <p>Jan 8, 2012 9:30 AM - 6:00 PM</p>
+                        <p>Jan 8, 2012 1:00 PM - 6:20 PM</p>
                         <p>Shanghai, China</p>
                     </div>
                     <br />
-                    <p style="text-align:right;"><a class="btn primary large" href="/2012/registration ">{{=_('立即报名！')}} &raquo;</a></p>
+                    <p style="text-align:right;"><a class="btn primary large" href="/2012/registration ">立即报名！ &raquo;</a></p>
                 </div><!--END grid-->
             </div><!--END hero-content-->
             
@@ -50,38 +50,58 @@
         </div><!-- END row-->
     </div><!-- END hero-unit-->
     
+    <div class="row show-grid underhero">
+        <div class="span3"><h2 style="margin-top:10px;">大会赞助商</h2></div>
+        <div class="span3"><a target="_blank" href="http://www.snda.com/"><img src="{{=url_for_static('images/sponsors/snda.png')}}" alt="盛大网络" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.ijinshan.com/"><img src="{{=url_for_static('images/sponsors/jinshan.gif')}}" alt="金山网络" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.douban.com/"><img src="{{=url_for_static('images/sponsors/douban.gif')}}" alt="Douban" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.sina.com.cn/"><img src="{{=url_for_static('images/sponsors/sina.gif')}}" alt="Sina" width="150" /></a></div>
+    </div>
+    <div class="row show-grid underhero">
+        <div class="span3">&nbsp;</div>
+        <div class="span3"><a target="_blank" href="http://www.rackspace.com/"><img src="{{=url_for_static('images/sponsors/rackspace.png')}}" alt="Rackspace" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.cs2c.com.cn/"><img src="{{=url_for_static('images/sponsors/cs2c.png')}}" alt="中标软件有限公司" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.dianping.com/"><img src="{{=url_for_static('images/sponsors/dzdp.png')}}" alt="大众点评" width="150" /></a></div>
+        <div class="span3"><a target="_blank" href="http://www.gsta.com/"><img src="{{=url_for_static('images/sponsors/zgdx.jpg')}}" alt="中国电信广州研究院" width="150" /></a></div>
+    </div><!--END grid-->
+    <div class="row show-grid underhero">
+        <div class="span3">&nbsp;</div>
+        <div class="span3"><a target="_blank" href="http://www.intel.com/"><img src="{{=url_for_static('images/sponsors/intel.png')}}" alt="Intel" /></a></div>
+        <div class="span3"><a target="_blank" href="http://dell.com/"><img src="{{=url_for_static('images/sponsors/dell.gif')}}" alt="DELL" /></a></div>
+    </div><!--END grid-->
+    <h2 style="margin-top:10px; display:inline-block; border:none;">演讲嘉宾</h2><small>&nbsp;&nbsp;<a href="/2012/schedule">查看详细演讲内容及日程安排 &raquo;</a></small>
     <div class="row">
-        <div class="span6">
-          <h2>{{=_('演讲日程')}}</h2>
+        <div class="span5">
+          <h2>演讲日程</h2>
           <ol>
-              <li>{{=_('会议开场 & 欢迎来宾')}}</li>
-              <li class="has_sub_schedule">{{=_('精彩主题演讲')}}&darr;
+              <li>会议开场 & 欢迎来宾</li>
+              <li class="has_sub_schedule">精彩主题演讲&darr;
                 <ul class="sub_schedule">
-                  <li>{{=_('国内首个公有云计算平台核心团队经验分享')}}</li>
-                  <li>{{=_('Deploy Openstack with Juju')}}</li>
-                  <li>{{=_('用Haproxy+OpenStack实现web application auto scaling')}}</li>
-                  <li>{{=_('OpenStack部署实践')}}</li>
+                  <li>国内首个公有云计算平台核心团队经验分享</li>
+                  <li>Deploy Openstack with Juju</li>
+                  <li>用Haproxy+OpenStack实现web application auto scaling</li>
+                  <li>OpenStack部署实践</li>
                 </ul>
               </li>
-              <li>{{=_('闪电演讲')}}</li>
-              <li>{{=_('分组讨论和实战演练')}}</li>
+              <li>闪电演讲</li>
+              <li>分组讨论和实战演练</li>
           </ol>
-          <p><a class="btn" href="/2012/schedule">{{=_('详细日程')}} &raquo;</a></p>
+          <p><a class="btn" href="/2012/schedule">详细日程 &raquo;</a></p>
 
         </div>
-        <div class="span5">
-          <h2>{{=_('关于')}} COSUG</h2>
-           <p>{{=_('Users and developers of the open source cloud, OpenStack.org. The group objective is to create a community for collaboration in China.')}}</p>
-           <p>{{=_('Google Groups')}}: <a href="http://groups.google.com/group/china-openstack-user-group" target="_blank">http://groups.google.com/group/china-openstack-user-group</a></p>
-           <p>Welcome to the Community <a href="http://www.openstack.org/community/" target="_blank">http://www.openstack.org/community/</a></p>
-          <p><a class="btn" href="/2012/about">{{=_('更多细节')}} &raquo;</a></p>
+        <div class="span6">
+          <h2>关于 COSUG</h2>
+           <p>中国OpenStack用户组（COSUG）社区是由国内的OpenStack用户和开发者组成的开放社区，以推动中国OpenStack技术交流与合作为主要目的。</p>
+           <p>Google Groups: <a href="http://groups.google.com/group/china-openstack-user-group" target="_blank">http://groups.google.com/group/china-openstack-user-group</a></p>
+           <p>OpenStack社区 <a href="http://www.openstack.org/community/" target="_blank">http://www.openstack.org/community/</a></p>
+          <p><a class="btn" href="/2012/about">更多细节 &raquo;</a></p>
        </div>
         <div class="span5">
 
-          <h2>{{=_('近期新闻')}}</h2>
+          <h2>近期新闻</h2>
           <ol>
-              <li>COSUG 2012 {{=_('官方网站上线')}}</li>
-              <li>COSUG {{=_('官方微博')}} <a href="http://weibo.com/cosug" target="_blank">@COSUG</a> {{=_('上线')}}</li>
+              <li>COSUG 2012 官方网站上线</li>
+              <li>COSUG 官方微博 <a href="http://weibo.com/cosug" target="_blank">@COSUG</a> 上线</li>
           </ol>
         </div>
       </div>
