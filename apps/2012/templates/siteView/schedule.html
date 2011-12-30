@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="{{=url_for_static('css/schedule.css')}}" />
 {{end}}
 {{block content}}
-<h1>{{=_('日程安排')}}</h1>
+<h1>{{=_('日程安排(09:00-18:00,2012-01-08)')}}</h1>
 <table class="zebra-striped">
     <tr>
         <th>{{=_('时间')}}</th>
@@ -18,127 +18,115 @@
         <th>{{=_('主题')}}</th>
     </tr>
     <tr class="break">
-        <td>13:00-13:30</td>
+        <td>09:00-09:30</td>
         <td>{{=_('现场接待/签到')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>13:30-13:35</td>
+        <td>09:30-09:40</td>
         <td>{{=_('致辞	会议开场 & 欢迎来宾')}}</td> 
         <td>{{=_('主持人')}}@COSUG</td>
         <td></td>
     </tr>
     <tr>
-        <td>13:35-14:00</td>
-        <td>{{=_('演讲')}}</td>
-        <td>{{=_('Zhongyue Luo')}}</td>
-        <td>{{=_('Hacking on Openstack\'s Nova source code')}}<br />{{=_('介绍基于OpenStack的云平台的部署与开发')}}</td>
+        <td>09:40-11:30</td>
+        <td>{{=_('部署实战')}}</td>
+        <td>{{=_('王浩飞')}}@VMware</td>
+        <td>{{=_('OpenStack in Action')}}<br />{{=_('基于OpenStack的云平台的部署')}}</td>
     </tr>
     <tr>
-        <td>14:00-14:05</td>
+        <td>13:00-13:30</td>    
+        <td>{{=_('演讲')}}</td>
+        <td>{{=_('Zhongyue Luo')}}@sina</td>
+        <td>{{=_('Hacking on Openstack\'s Nova source code')}}<br />{{=_('OpenStack核心代码分析')}}</td>
+    </tr>
+    <tr>
+        <td>13:30-13:40</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>14:05-14:30</td>
+        <td>13:40-14:10</td>
         <td>{{=_('演讲')}}</td>
         <td>{{=_('Zhengpeng Hou')}}@Canonical Ltd.</td>
         <td>{{=_('Deploy Openstack with Juju')}}<br />{{=_('briefly introduce Juju and how to deploy openstack on Ubuntu')}}</td>
     </tr>
     <tr>
-        <td>14:30-14:35</td>
+        <td>14:10-14:20</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="break">
-        <td>14:35-14:45</td>
-        <td>{{=_('休息')}}</td>
-        <td></td>
-        <td></td>
-    </tr>
     <tr>
-        <td>14:45-15:10</td>
+        <td>14:20-14:50</td>
         <td>{{=_('演讲')}}</td>
         <td>{{=_('Quake Wang')}}@bihannet.com</td>
-        <td>{{=_('用Haproxy+OpenStack实现web application auto scaling')}}<br />{{=_('现场介绍并演示auto scaling script的运行demo')}}</td>
-    </tr>
+        <td>{{=_('Web application auto scaling based on Haproxy & OpenStack')}}<br />{{=_('现场介绍并演示auto scaling script的运行demo')}}</td>
+    </tr> 
     <tr>
-        <td>15:10-15:15</td>
-        <td>{{=_('互动提问')}}</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>15:15-15:40</td>
-        <td>{{=_('演讲')}}</td>
-        <td>{{=_('TBD')}}@DELL</td>
-        <td>{{=_('OpenStack部署实践')}}<br />{{=_('Crowbar 配置工具介绍')}}</td>
-    </tr>
-    <tr>
-        <td>15:40-15:45</td>
+        <td>14:50-15:00</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr class="break">
-        <td>15:45-16:00</td>
+        <td>15:00-15:10</td>
         <td>{{=_('茶歇')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:00-16:10</td>
+        <td>15:10-15:20</td>
         <td>{{=_('闪电演讲')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:10-16:15</td>
+        <td>15:20-15:25</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:15-16:25</td>
+        <td>15:25-15:35</td>
         <td>{{=_('闪电演讲')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:25-16:30</td>
+        <td>15:35-15:40</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:30-16:40</td>
+        <td>15:40-15:50</td>
         <td>{{=_('闪电演讲')}}</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>16:40-16:45</td>
+        <td>15:50-15:55</td>
         <td>{{=_('互动提问')}}</td>
         <td></td>
         <td></td>
     </tr>
-    <tr>
-        <td>16:45-17:00</td>
-        <td>{{=_('内容介绍')}}</td>
-        <td>小组负责人@COSUG</td>
+    <tr class="break">
+        <td>15:55-16:10</td>
+        <td>{{=_('茶歇')}}</td>
         <td></td>
-    </tr>
+        <td></td>
+    </tr>    
     <tr>
-        <td>17:00-17:50</td>
+        <td>16:10-17:30</td>
         <td>{{=_('分组讨论')}}</td>
-        <td></td>
+        <td>小组负责人@COSUG</td>
         <td>分组讨论及上机实践</td>
     </tr>
     <tr>
-        <td>17:50-18:20</td>
+        <td>17:30-18:00</td>
         <td>{{=_('总结分享')}}</td>
         <td></td>
         <td></td>
