@@ -1175,11 +1175,11 @@ msgid "王浩飞"
 msgstr "Wang Haofei"
 
 #: .\apps\2011\templates\index.html:240
-msgid "《OpenStack: 基于Python编写的开源云计算平台》 - 王浩飞"
+msgid "OpenStack in Action - 王浩飞"
 msgstr "\"OpenStack: Open Source Cloud Computing platform written in Python\" - Wang Haofei"
 
 #: .\apps\2011\templates\siteView\schedule.html:268
-msgid "快速演讲：《OpenStack: 基于Python编写的开源云计算平台》"
+msgid "OpenStack in Action"
 msgstr "Lightning Talk: \"OpenStack: Open Source Cloud Computing platform written in Python\""
 
 #: .\apps\2011\templates\siteView\volunteer.html:40
